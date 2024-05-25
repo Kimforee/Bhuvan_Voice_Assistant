@@ -1,0 +1,135 @@
+{% block content %}
+{% if page == 'login' %}
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #e0e0e0;
+        font-family: Arial, sans-serif;
+    }
+    .neumorphic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: 7px 7px 15px #bebebe, -7px -7px 15px #ffffff;
+    }
+    label {
+        margin-top: 10px;
+        font-size: 1.1em;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    button {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        font-size: 1em;
+        transition: box-shadow 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        outline: none;
+        box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+    }
+    input[type="submit"],
+    button {
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+        box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    }
+
+    button a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+</style>
+<div class="neumorphic-container">
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter Username">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    <br>
+    <p>haven't signed up yet?</p>
+    <button>
+        <a href="{% url 'register' %}">Sign up</a>
+    </button>
+</div>
+
+
+{% else %}
+
+<div class="neumorphic-container" style="margin-top: 20px;">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+        <div class="error">{{ form.non_field_errors }}</div>
+        {% endif %}
+        <label for="reg-username">Username</label>
+        <input type="text" name="username" id="reg-username" class="neumorphic-input" placeholder="Enter Username">
+        {% if form.username.errors %}
+        <div class="error">{{ form.username.errors }}</div>
+        {% endif %}
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="neumorphic-input" placeholder="Enter Email">
+        {% if form.email.errors %}
+        <div class="error">{{ form.email.errors }}</div>
+        {% endif %}
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="neumorphic-input" placeholder="Enter Password">
+        {% if form.password.errors %}
+        <div class="error">{{ form.password.errors }}</div>
+        {% endif %}
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <br>
+    <p>Already a member? Login now!</p>
+    <br>
+    <button>
+        <a href="{% url 'login' %}">Login</a>
+    </button>
+</div>
+
+
+
+
+{% endif %}
+
+{% endblock content %}

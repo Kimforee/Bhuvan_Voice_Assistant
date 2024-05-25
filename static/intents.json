@@ -1,0 +1,1677 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hii",
+        "hey !",
+        "wake up",
+        "good morning",
+        "good afternoon",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Hello !",
+        "How are you ?",
+        "Hello ! I'm Ready to help you ",
+        "Hello !",
+        "Hi there!",
+        "Hey!",
+        "Hello !, Good to see you! How can I assist you today?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "sleep",
+        "exit",
+        "bye Friday",
+        "Exit",
+        "initiate sleep"
+      ],
+      "responses": [
+        "Bye",
+        "Good bye",
+        "Initiating sleep",
+        "Take care and have a great day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "that's helpful",
+        "appreciate it"
+      ],
+      "responses": [
+        "Happy to help",
+        "Anytime!",
+        "My pleasure",
+        "You're welcome!",
+        "Glad I could help!"
+      ]
+    },
+    {
+      "tag": "",
+      "patterns": [
+        "",
+        " "
+      ],
+      "responses": [
+        "Sorry, can't understand you",
+        "please give me more information",
+        "i couldn't understand it properly"
+      ]
+    },
+    {
+      "tag": "google",
+      "patterns": [
+        "google",
+        "search",
+        "internet"
+      ],
+      "responses": [
+        "Redirecting to Google..."
+      ]
+    },
+    {
+      "tag": "wikipedia",
+      "patterns": [
+        "what is",
+        "what's the",
+        "wikipedia",
+        "who is",
+        "who was",
+        "what was"
+      ],
+      "responses": [
+        "wikipedia",
+        ""
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what is the time",
+        "What's the time",
+        "current time"
+      ],
+      "responses": [
+        "time",
+        ""
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "how are you !",
+        "are you fine !",
+        "what's up !",
+        "how are you feeling"
+      ],
+      "responses": [
+        "pretty fine",
+        "i am fine",
+        "I'm doing well, thank you!",
+        "Feeling great today!",
+        "All good on my end!",
+        "all good sir !"
+      ]
+    },
+    {
+      "tag": "excitement",
+      "patterns": [
+        "wow!",
+        "amazing!",
+        "incredible!",
+        "unbelievable!"
+      ],
+      "responses": [
+        "That's fantastic!",
+        "I'm thrilled!",
+        "Isn't it exciting?"
+      ]
+    },
+    {
+      "tag": "frustration",
+      "patterns": [
+        "this is frustrating",
+        "I'm so annoyed",
+        "why is this not working?",
+        "I can't figure it out"
+      ],
+      "responses": [
+        "I understand your frustration.",
+        "Let's find a solution together.",
+        "Take a deep breath, we'll sort it out."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Joke",
+        "Make me laugh"
+      ],
+      "responses": [
+        "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+        "I ate a clock yesterday, it was very time-consuming",
+        "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+        "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+        "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+        "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+        "What do you call a snowman with a suntan? A puddle.",
+        "How does a penguin build a house? Igloos it together",
+        "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+        "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+        "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+      ],
+      "context": [
+        "jokes"
+      ]
+    },
+    {
+      "tag": "Identity",
+      "patterns": [
+        "Who are you",
+        "what are you"
+      ],
+      "responses": [
+        "I am a Voice Activated Search Assistant, to help you know about Bhuvan"
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I need motivation",
+        "inspire me",
+        "positive quotes",
+        "quotes"
+      ],
+      "responses": [
+        "You're capable of amazing things!",
+        "Believe in yourself, and you'll achieve great things!"
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "recommend a book",
+        "favorite book genre",
+        "book reviews"
+      ],
+      "responses": [
+        "I can suggest some great books! What genre are you interested in?",
+        "I don't read books, but I can provide recommendations based on your preferences!"
+      ]
+    },
+    {
+      "tag": "bhuvan",
+      "patterns": [
+        "what is Bhuvan",
+        "explain Bhuvan",
+        "tell me about Bhuvan",
+        "Bhuvan information",
+        "details about Bhuvan"
+      ],
+      "responses": [
+        "Bhuvan is an Indian web-based utility developed by ISRO that allows users to explore a set of geographic content within Indian boundaries.",
+        "The content includes thematic maps related to disasters, agriculture, water resources, land cover, and processed satellite data generated by ISRO.",
+        "Bhuvan is available in Hindi, English, Tamil, and Telugu and serves geospatial data for various applications."
+      ]
+    },
+    {
+      "tag": "bhuvan_usage",
+      "patterns": [
+        "how to use Bhuvan",
+        "Bhuvan usage guide",
+        "using Bhuvan for geospatial data",
+        "steps to use Bhuvan",
+        "Bhuvan user guide"
+      ],
+      "responses": [
+        "Bhuvan can be used to explore and visualize geospatial data by accessing its web portal. Users can view maps without login but need to register to download satellite data.",
+        "The platform offers various tools and functionalities for interacting with geospatial data, including thematic maps and high-resolution imagery.",
+        "Bhuvan Wiki and BhuvanLite are available for a faster and more user-friendly experience."
+      ]
+    },
+    {
+      "tag": "bhuvan_languages",
+      "patterns": [
+        "which languages are supported by Bhuvan",
+        "Bhuvan language options",
+        "available languages on Bhuvan",
+        "Bhuvan in regional languages",
+        "Bhuvan supported languages"
+      ],
+      "responses": [
+        "Bhuvan is available in Hindi, English, Tamil, and Telugu.",
+        "Users can access the platform and its geospatial data in any of these Hindi, English, Tamil, and Telugu supported languages."
+      ]
+    },
+    {
+      "tag": "bhuvan_improvements",
+      "patterns": [
+        "what improvements have been made to Bhuvan",
+        "Bhuvan updates",
+        "recent changes in Bhuvan",
+        "Bhuvan new features",
+        "improvements in Bhuvan platform"
+      ],
+      "responses": [
+        "Since its initial release, Bhuvan has been improved to be faster and more responsive, with updates addressing bandwidth and server issues.",
+        "BhuvanLite was created for a faster experience, and Bhuvan Wiki was launched to engage users in sharing knowledge.",
+        "A WebGL-based open-source virtual globe was introduced to overcome plug-in restrictions and platform dependency for 3D visualization."
+      ]
+    },
+    {
+      "tag": "bhuvan_association_with_government",
+      "patterns": [
+        "how is Bhuvan associated with the government",
+        "Bhuvan government collaboration",
+        "government projects on Bhuvan",
+        "Bhuvan and Indian government",
+        "Bhuvan government use cases"
+      ],
+      "responses": [
+        "Bhuvan is associated with various sections of the Government of India, enabling the use of geospatial technology for public geospatial data visualization and consumption.",
+        "Examples include the Toll Information System for the National Highways Authority of India and the Islands Information System for the Ministry of Home Affairs."
+      ]
+    },
+    {
+      "tag": "bhuvan_history",
+      "patterns": [
+        "when was Bhuvan launched",
+        "Bhuvan launch date",
+        "history of Bhuvan",
+        "Bhuvan development timeline",
+        "Bhuvan initial release"
+      ],
+      "responses": [
+        "Bhuvan was initially released on August 12, 2009, by ISRO.",
+        "The beta version was followed by updates that improved stability and performance over time."
+      ]
+    },
+    {
+      "tag": "bhuvan_stability",
+      "patterns": [
+        "is Bhuvan stable now",
+        "Bhuvan current stability",
+        "Bhuvan platform stability",
+        "Bhuvan reliability",
+        "current version stability of Bhuvan"
+      ],
+      "responses": [
+        "Since the initial beta release, Bhuvan has become more stable with fewer reported problems.",
+        "Users can access a stable version with improved performance and a discussion forum for assistance."
+      ]
+    },
+    {
+      "tag": "bhuvan_deep_dive",
+      "patterns": [
+        "bhuvan website in detail",
+        "tell me more about bhuvan functionalities",
+        "advanced features of bhuvan"
+      ],
+      "responses": [
+        "Bhuvan offers a wide range of features beyond this basic explanation. To explore its full potential, I recommend visiting the Bhuvan website: [https://www.nrsc.gov.in/EO_Rural_Portals?language_content_entity=en]"
+      ]
+    },
+    {
+      "tag": "bhuvan_map_creation",
+      "patterns": [
+        "create a map on bhuvan",
+        "how to use bhuvan for mapping",
+        "bhuvan custom map creation"
+      ],
+      "responses": [
+        "Bhuvan allows you to create custom maps with your preferred data layers.  For a guide on map creation, visit the Bhuvan website: [https://www.nrsc.gov.in/EO_Bhuvan_Satellite]"
+      ]
+    },
+    {
+      "tag": "bhuvan_overview",
+      "patterns": [
+        "what is bhuvan website",
+        "tell me about bhuvan in short",
+        "bhuvan website overview",
+        "give overview of bhuvan website",
+        "bhuvan description"
+      ],
+      "responses": [
+        "Bhuvan is a comprehensive geospatial portal that provides access to a vast array of satellite imagery and geospatial data.",
+        "Bhuvan is a one-stop destination for users seeking to explore, analyze, and utilize geospatial data for various applications.",
+        "Bhuvan is a key resource for anyone involved in geospatial research, decision-making, and education."
+      ]
+    },
+    {
+      "tag": "bhuvan_data_sources",
+      "patterns": [
+        "what are the data sources for Bhuvan",
+        "Bhuvan data origin",
+        "sources of Bhuvan geospatial data",
+        "where does Bhuvan get its data",
+        "Bhuvan data information"
+      ],
+      "responses": [
+        "Bhuvan uses data provided by satellites including Resourcesat-1, Cartosat-1, and Cartosat-2 to get detailed imagery of India.",
+        "The information on the platform is obtained from government sources or through crowdsourcing."
+      ]
+    },
+    {
+      "tag": "bhuvan_access",
+      "patterns": [
+        "how to access Bhuvan",
+        "Bhuvan access details",
+        "getting started with Bhuvan",
+        "accessing geospatial data on Bhuvan",
+        "Bhuvan platform access"
+      ],
+      "responses": [
+        "You can access Bhuvan via its website http://bhuvan.nrsc.gov.in/. Users can explore maps without login but need to register to download satellite data and products.",
+        "The platform supports cross-platform access and provides a user-friendly interface for geospatial data exploration."
+      ]
+    },
+    {
+      "tag": "bhuvan_data_access",
+      "patterns": [
+        "bhuvan data download",
+        "accessing data on bhuvan",
+        "how to access data on bhuvan",
+        "download satellite imagery from bhuvan",
+        "what kind of data is available on bhuvan"
+      ],
+      "responses": [
+        "Bhuvan provides access to a variety of geospatial data, including satellite imagery, maps, and elevation data.",
+        "You can access high-resolution satellite images, topographic maps, and other geospatial datasets on Bhuvan.",
+        "Bhuvan allows users to download satellite imagery and other geospatial data for various applications."
+      ]
+    },
+    {
+      "tag": "bhuvan_features",
+      "patterns": [
+        "bhuvan features",
+        "bhuvan services",
+        "Bhuvan capabilities",
+        "describe Bhuvan features",
+        "services offered by Bhuvan",
+        "tell me about the capabilities of bhuvan",
+        "describe the services offered by bhuvan",
+        "what are the features of bhuvan",
+        "Bhuvan functionalities"
+      ],
+      "responses": [
+        "Bhuvan offers detailed imagery of Indian locations with spatial resolutions up to 1 meter and covers 177 cities with high-resolution datasets.",
+        "It provides geospatial data layers for various applications like Toll Information System, Islands Information System, and cultural heritage sites.",
+        "The platform supports visualisation of thematic maps and processed satellite data.",
+        "Bhuvan offers a wide range of services, including real-time satellite tracking, interactive maps, and advanced geospatial analysis tools.",
+        "Bhuvan provides a user-friendly interface and robust functionality for geospatial research, decision-making, and education.",
+        "Bhuvan supports the integration of external data sources, allowing for customized analyses tailored to specific needs."
+      ]
+    },
+    {
+      "tag": "bhuvan_analysis_tools",
+      "patterns": [
+        "what analysis tools does bhuvan offer",
+        "how can I analyze geospatial data on bhuvan",
+        "tell me about the advanced geospatial analysis tools on bhuvan",
+        "bhuvan analysis tools",
+        "geospatial analysis on bhuvan"
+      ],
+      "responses": [
+        "Bhuvan offers a range of advanced geospatial analysis tools, including spatial analysis tools and temporal analysis tools.",
+        "Bhuvan provides tools for creating custom maps and applications, as well as integrating external data sources.",
+        "Bhuvan's analysis tools enable users to analyze and visualize geospatial data in various ways."
+      ]
+    },
+    {
+      "tag": "bhuvan_real_time_tracking",
+      "patterns": [
+        "how can I track satellites in real-time on bhuvan",
+        "tell me about the real-time satellite tracking feature on bhuvan",
+        "can I track satellite movements on bhuvan",
+        "real-time satellite tracking on bhuvan",
+        "bhuvan satellite tracking"
+      ],
+      "responses": [
+        "Bhuvan offers a real-time satellite tracking feature that allows users to track the movements of various satellites in real-time.",
+        "The real-time satellite tracking feature on Bhuvan provides information on the location, altitude, and velocity of the satellites.",
+        "Yes, you can track satellite movements on Bhuvan using its real-time satellite tracking feature."
+      ]
+    },
+    {
+      "tag": "bhuvan_aadhaar_description",
+      "patterns": [
+        "what is bhuvan aadhaar",
+        "describe bhuvan aadhaar",
+        "tell me about the bhuvan aadhaar application"
+      ],
+      "responses": [
+        "Bhuvan Aadhaar is a specialized application designed to leverage geospatial technology for Aadhaar authentication. It integrates Aadhaar authentication with geospatial data, enabling users to verify the location of Aadhaar holders against geospatial databases.",
+        "Bhuvan Aadhaar is a platform that combines the robustness of Aadhaar with the precision of geospatial data for secure and efficient identity verification. It is accessible via the National Remote Sensing Centre (NRSC)'s Bhuvan platform.",
+        "Bhuvan Aadhaar is a tool that integrates Aadhaar authentication with geospatial data for various applications such as financial transactions, government services, and other sectors where Aadhaar-based authentication is required."
+      ]
+    },
+    {
+      "tag": "bhuvan_aadhaar_features",
+      "patterns": [
+        "what are the features of bhuvan aadhaar",
+        "tell me about the capabilities of bhuvan aadhaar",
+        "describe the services offered by bhuvan aadhaar"
+      ],
+      "responses": [
+        "Bhuvan Aadhaar offers a range of features including real-time Aadhaar authentication, geospatial data integration, and secure identity verification. It enables users to verify the location of Aadhaar holders against geospatial databases, enhancing the security and reliability of identity verification processes.",
+        "Bhuvan Aadhaar provides a robust platform for Aadhaar authentication using geospatial technology. It offers features such as real-time Aadhaar authentication, geospatial data integration, and secure identity verification.",
+        "Bhuvan Aadhaar combines the robustness of Aadhaar with the precision of geospatial data for secure and efficient identity verification. It offers features such as real-time Aadhaar authentication, geospatial data integration, and secure identity verification."
+      ]
+    },
+    {
+      "tag": "about_aadhaar",
+      "patterns": [
+        "what is Aadhaar",
+        "explain Aadhaar",
+        "tell me about Aadhaar",
+        "Aadhaar information",
+        "details about Aadhaar"
+      ],
+      "responses": [
+        "Aadhaar is a 12-digit random number issued by the UIDAI to residents of India after a verification process.",
+        "It is a unique identifier provided free of cost to Indian residents and requires minimal demographic and biometric information.",
+        "Aadhaar serves as a primary identifier for various government schemes and services, promoting transparency and good governance."
+      ]
+    },
+    {
+      "tag": "aadhaar_enrollment",
+      "patterns": [
+        "how to enroll for Aadhaar",
+        "Aadhaar enrollment process",
+        "steps to get Aadhaar",
+        "what is needed for Aadhaar enrollment",
+        "Aadhaar registration"
+      ],
+      "responses": [
+        "To enroll for Aadhaar, individuals need to provide minimal demographic and biometric information. The process is free of cost.",
+        "You can enroll for Aadhaar by visiting an enrollment center with necessary documents for verification.",
+        "The enrollment process includes providing your name, date of birth, gender, address, mobile number (optional), email ID (optional), and biometric data such as fingerprints, iris scans, and a facial photograph."
+      ]
+    },
+    {
+      "tag": "aadhaar_demographic_info",
+      "patterns": [
+        "what demographic information is needed for Aadhaar",
+        "Aadhaar demographic details",
+        "required information for Aadhaar",
+        "Aadhaar data requirements",
+        "demographic data for Aadhaar"
+      ],
+      "responses": [
+        "For Aadhaar enrollment, you need to provide your name, date of birth or age, gender, and address. Mobile number and email ID are optional.",
+        "In specific cases, additional information such as Introducer's name and Aadhaar number, Head of Family's name and Aadhaar number, and Proof of Relationship (PoR) document may be required."
+      ]
+    },
+    {
+      "tag": "aadhaar_biometric_info",
+      "patterns": [
+        "what biometric information is needed for Aadhaar",
+        "Aadhaar biometric details",
+        "required biometric data for Aadhaar",
+        "biometric requirements for Aadhaar",
+        "Aadhaar fingerprint and iris scan"
+      ],
+      "responses": [
+        "Aadhaar enrollment requires biometric information including ten fingerprints, two iris scans, and a facial photograph.",
+        "Biometric data is used to ensure the uniqueness of each Aadhaar number and to prevent duplicates and fake identities."
+      ]
+    },
+    {
+      "tag": "aadhaar_features",
+      "patterns": [
+        "what are the features of Aadhaar",
+        "Aadhaar capabilities",
+        "describe Aadhaar features",
+        "services offered by Aadhaar",
+        "Aadhaar benefits"
+      ],
+      "responses": [
+        "Aadhaar is unique, verifiable online, cost-effective, and robust enough to eliminate duplicates and fake identities.",
+        "It serves as a primary identifier for government services and benefits, promoting social and financial inclusion.",
+        "Aadhaar can be used as a permanent financial address and facilitates the delivery of various subsidies and benefits directly to residents."
+      ]
+    },
+    {
+      "tag": "aadhaar_governance",
+      "patterns": [
+        "how does Aadhaar help in governance",
+        "Aadhaar and government services",
+        "role of Aadhaar in governance",
+        "Aadhaar impact on public services",
+        "Aadhaar and transparency"
+      ],
+      "responses": [
+        "Aadhaar promotes transparency and good governance by serving as a unique identifier for government schemes and services.",
+        "It helps in the direct delivery of subsidies, benefits, and services to residents, ensuring efficient and targeted distribution.",
+        "Aadhaar supports public sector delivery reforms, managing fiscal budgets, and promoting hassle-free, people-centric governance."
+      ]
+    },
+    {
+      "tag": "aadhaar_financial_inclusion",
+      "patterns": [
+        "how does Aadhaar promote financial inclusion",
+        "Aadhaar and financial services",
+        "Aadhaar as financial address",
+        "financial benefits of Aadhaar",
+        "Aadhaar and banking"
+      ],
+      "responses": [
+        "Aadhaar facilitates financial inclusion by serving as a permanent financial address for the underprivileged and weaker sections of society.",
+        "It enables residents to access various financial services and benefits directly using their Aadhaar number.",
+        "Aadhaar is a key tool for social and financial inclusion, helping to ensure that government benefits reach those who need them most."
+      ]
+    },
+    {
+      "tag": "about_bhuvan_narl",
+      "patterns": [
+        "what is Bhuvan NARL",
+        "explain Bhuvan NARL",
+        "tell me about Bhuvan NARL",
+        "Bhuvan NARL information",
+        "details about Bhuvan NARL"
+      ],
+      "responses": [
+        "Bhuvan NARL is a specialized tool for visualizing and analyzing atmospheric data and models.",
+        "It supports weather forecasting, climate studies, and environmental monitoring by providing various geospatial information layers and analysis tools.",
+        "Bhuvan NARL helps in informed decision-making and policy development for atmospheric research."
+      ]
+    },
+    {
+      "tag": "bhuvan_narl_features",
+      "patterns": [
+        "what are the features of Bhuvan NARL",
+        "Bhuvan NARL capabilities",
+        "describe Bhuvan NARL features",
+        "services offered by Bhuvan NARL",
+        "Bhuvan NARL functionalities"
+      ],
+      "responses": [
+        "Bhuvan NARL offers features such as active layers, custom layers, drawing tools, measurement tools, WMS manager, print options, and navigation tools.",
+        "It provides access to thematic information including weather forecasts, climate models, and atmospheric composition data.",
+        "Users can interact with satellite imagery, topographic maps, and administrative boundaries for atmospheric research."
+      ]
+    },
+    {
+      "tag": "active_layers",
+      "patterns": [
+        "what are active layers in Bhuvan NARL",
+        "Bhuvan NARL active layers",
+        "describe active layers in Bhuvan NARL",
+        "using active layers in Bhuvan NARL",
+        "Bhuvan NARL data layers"
+      ],
+      "responses": [
+        "Active Layers in Bhuvan NARL allow users to view and interact with various geospatial data layers related to atmospheric research.",
+        "These layers include satellite imagery, topographic maps, and administrative boundaries.",
+        "Active Layers help in detailed analysis and visualization of atmospheric phenomena."
+      ]
+    },
+    {
+      "tag": "my_layers",
+      "patterns": [
+        "what is My Layers in Bhuvan NARL",
+        "Bhuvan NARL My Layers feature",
+        "describe My Layers in Bhuvan NARL",
+        "using My Layers in Bhuvan NARL",
+        "custom layers in Bhuvan NARL"
+      ],
+      "responses": [
+        "My Layers in Bhuvan NARL allows users to save and manage their preferred data layers for quick access and customization.",
+        "This feature facilitates efficient monitoring and analysis of atmospheric phenomena in specific regions or time periods.",
+        "Users can personalize their data layers to tailor the application to their specific needs."
+      ]
+    },
+    {
+      "tag": "add_layer",
+      "patterns": [
+        "how to add layers in Bhuvan NARL",
+        "Bhuvan NARL add layer feature",
+        "describe Add Layer in Bhuvan NARL",
+        "adding new layers in Bhuvan NARL",
+        "customizing layers in Bhuvan NARL"
+      ],
+      "responses": [
+        "The Add Layer feature in Bhuvan NARL enables users to add new data layers to the map.",
+        "This expands the range of data available for analysis, allowing users to tailor the application to their specific interests.",
+        "Adding new layers helps in comprehensive analysis of atmospheric data."
+      ]
+    },
+    {
+      "tag": "draw_tool",
+      "patterns": [
+        "what is the Draw Tool in Bhuvan NARL",
+        "Bhuvan NARL drawing tools",
+        "describe the Draw Tool in Bhuvan NARL",
+        "using Draw Tool in Bhuvan NARL",
+        "drawing shapes in Bhuvan NARL"
+      ],
+      "responses": [
+        "The Draw Tool in Bhuvan NARL provides tools for drawing shapes and lines on the map.",
+        "It is useful for marking specific locations or areas of interest, such as weather systems or atmospheric boundaries.",
+        "Drawing tools aid in detailed visualization and analysis of geospatial data."
+      ]
+    },
+    {
+      "tag": "measurement_tools",
+      "patterns": [
+        "what are measurement tools in Bhuvan NARL",
+        "Bhuvan NARL measurement features",
+        "describe measurement tools in Bhuvan NARL",
+        "measuring distances in Bhuvan NARL",
+        "using measure area in Bhuvan NARL"
+      ],
+      "responses": [
+        "Bhuvan NARL offers tools for measuring distances and areas on the map.",
+        "These tools aid in spatial analysis and planning, supporting the assessment of atmospheric phenomena and their impacts.",
+        "Measurement tools are essential for detailed geospatial analysis."
+      ]
+    },
+    {
+      "tag": "wms_manager",
+      "patterns": [
+        "what is WMS Manager in Bhuvan NARL",
+        "Bhuvan NARL WMS Manager feature",
+        "describe WMS Manager in Bhuvan NARL",
+        "using WMS Manager in Bhuvan NARL",
+        "integrating external data in Bhuvan NARL"
+      ],
+      "responses": [
+        "The WMS Manager in Bhuvan NARL manages Web Map Service (WMS) layers.",
+        "It allows users to integrate external geospatial data sources into their analysis.",
+        "WMS Manager enhances the comprehensiveness and accuracy of the available information."
+      ]
+    },
+    {
+      "tag": "print_feature",
+      "patterns": [
+        "how to print maps in Bhuvan NARL",
+        "Bhuvan NARL print feature",
+        "describe print options in Bhuvan NARL",
+        "using print in Bhuvan NARL",
+        "printing map view in Bhuvan NARL"
+      ],
+      "responses": [
+        "The Print feature in Bhuvan NARL offers options to print the current map view.",
+        "It is useful for documentation or presentation purposes.",
+        "Printing maps facilitates communication and collaboration among stakeholders."
+      ]
+    },
+    {
+      "tag": "navigation_tools",
+      "patterns": [
+        "what are navigation tools in Bhuvan NARL",
+        "Bhuvan NARL navigation features",
+        "describe navigation tools in Bhuvan NARL",
+        "using navigation tools in Bhuvan NARL",
+        "navigating the map in Bhuvan NARL"
+      ],
+      "responses": [
+        "Navigation tools in Bhuvan NARL include zooming in and out, panning, and rotating the map view.",
+        "These tools ensure easy access to detailed information about specific atmospheric phenomena.",
+        "Navigation tools help users explore and analyze geospatial data effectively."
+      ]
+    },
+    {
+      "tag": "thematic_information",
+      "patterns": [
+        "what thematic information is available in Bhuvan NARL",
+        "Bhuvan NARL thematic data",
+        "describe thematic information in Bhuvan NARL",
+        "using thematic information in Bhuvan NARL",
+        "weather and climate data in Bhuvan NARL"
+      ],
+      "responses": [
+        "Bhuvan NARL provides access to thematic information such as weather forecasts, climate models, and atmospheric composition data.",
+        "This information enhances its utility for various sectors including meteorology, climate research, and environmental monitoring.",
+        "Thematic information supports informed decision-making and policy development."
+      ]
+    },
+    {
+      "tag": "bhuvan_narl_disclaimer",
+      "patterns": [
+        "what is the disclaimer for Bhuvan NARL",
+        "Bhuvan NARL data disclaimer",
+        "describe Bhuvan NARL disclaimer",
+        "data accuracy in Bhuvan NARL",
+        "Bhuvan NARL version information"
+      ],
+      "responses": [
+        "The disclaimer indicates that the data is in version 1.0 and improvements are ongoing.",
+        "NSRC/ISRO disclaims responsibility for any inadvertent errors beyond their limitations.",
+        "Users are advised to consider the disclaimer while using the data for analysis."
+      ]
+    },
+    {
+      "tag": "bhuvan_narl_overall_purpose",
+      "patterns": [
+        "what is the purpose of Bhuvan NARL",
+        "Bhuvan NARL overall purpose",
+        "describe the goal of Bhuvan NARL",
+        "Bhuvan NARL mission",
+        "purpose of Bhuvan NARL tool"
+      ],
+      "responses": [
+        "Bhuvan NARL is part of the broader Bhuvan platform's efforts to make geospatial data and tools accessible for atmospheric research.",
+        "It supports atmospheric research and monitoring initiatives in India, contributing to the resilience and sustainability of weather forecasting, climate studies, and environmental management.",
+        "Bhuvan NARL aims to provide comprehensive tools and data for informed decision-making in atmospheric research."
+      ]
+    },
+    {
+      "tag": "about_bhuvan_data",
+      "patterns": [
+        "what is Bhuvan Data",
+        "explain Bhuvan Data",
+        "tell me about Bhuvan Data",
+        "Bhuvan Data information",
+        "details about Bhuvan Data"
+      ],
+      "responses": [
+        "Bhuvan Data is a comprehensive repository for a wide range of geospatial data and satellite imagery, accessible via the National Remote Sensing Centre (NRSC)'s Bhuvan platform.",
+        "It facilitates easy access, exploration, and utilization of geospatial data for applications like environmental monitoring, urban planning, agricultural analysis, and disaster management.",
+        "Bhuvan Data hosts satellite images, topographic maps, and other geospatial datasets from both domestic and international sources."
+      ]
+    },
+    {
+      "tag": "bhuvan_data_features",
+      "patterns": [
+        "what are the features of Bhuvan Data",
+        "Bhuvan Data capabilities",
+        "describe Bhuvan Data features",
+        "services offered by Bhuvan Data",
+        "Bhuvan Data functionalities"
+      ],
+      "responses": [
+        "Bhuvan Data offers features such as access to a vast collection of satellite images, topographic maps, and other geospatial datasets.",
+        "It supports advanced search functionalities based on parameters like location, date, sensor type, and data resolution.",
+        "Users can browse, select, and download specific datasets for further analysis or visualization."
+      ]
+    },
+    {
+      "tag": "data_catalog",
+      "patterns": [
+        "what is the data catalog in Bhuvan Data",
+        "Bhuvan Data catalog",
+        "describe data catalog in Bhuvan Data",
+        "browsing data in Bhuvan Data",
+        "data collection in Bhuvan Data"
+      ],
+      "responses": [
+        "The data catalog in Bhuvan Data allows users to browse through a vast collection of geospatial datasets and satellite images.",
+        "Users can select specific datasets based on their requirements and download them for further analysis or visualization.",
+        "The catalog includes data sourced from both domestic and international satellites."
+      ]
+    },
+    {
+      "tag": "advanced_search",
+      "patterns": [
+        "how to use advanced search in Bhuvan Data",
+        "Bhuvan Data advanced search feature",
+        "describe advanced search in Bhuvan Data",
+        "refining searches in Bhuvan Data",
+        "using search parameters in Bhuvan Data"
+      ],
+      "responses": [
+        "The advanced search feature in Bhuvan Data allows users to refine their searches based on parameters such as location, date, sensor type, and data resolution.",
+        "It helps users to efficiently find specific datasets that meet their requirements.",
+        "Advanced search functionality enhances the ease of accessing relevant geospatial data."
+      ]
+    },
+    {
+      "tag": "applications_of_bhuvan_data",
+      "patterns": [
+        "what are the applications of Bhuvan Data",
+        "uses of Bhuvan Data",
+        "Bhuvan Data applications",
+        "how to use Bhuvan Data",
+        "Bhuvan Data for different sectors"
+      ],
+      "responses": [
+        "Bhuvan Data can be used for various applications, including environmental monitoring, urban planning, agricultural analysis, and disaster management.",
+        "It supports a wide range of sectors by providing essential geospatial data and satellite imagery for analysis and decision-making.",
+        "Users can leverage Bhuvan Data for research, policy development, and operational planning in different fields."
+      ]
+    },
+    {
+      "tag": "data_download",
+      "patterns": [
+        "how to download data from Bhuvan Data",
+        "Bhuvan Data download process",
+        "downloading datasets from Bhuvan Data",
+        "Bhuvan Data download",
+        "accessing and downloading Bhuvan Data"
+      ],
+      "responses": [
+        "Users can download data from Bhuvan Data by browsing the catalog, selecting the desired datasets, and using the download options provided.",
+        "The platform offers a user-friendly interface for accessing and downloading geospatial data and satellite imagery.",
+        "Downloading data from Bhuvan Data is straightforward and supports further analysis and visualization."
+      ]
+    },
+    {
+      "tag": "types_of_data",
+      "patterns": [
+        "what types of data are available in Bhuvan Data",
+        "Bhuvan Data types",
+        "describe data types in Bhuvan Data",
+        "available datasets in Bhuvan Data",
+        "data categories in Bhuvan Data"
+      ],
+      "responses": [
+        "Bhuvan Data hosts a variety of datasets, including satellite images, topographic maps, and other geospatial data.",
+        "The data is sourced from both domestic and international satellites, providing a comprehensive range of geospatial information.",
+        "Users can access different types of data suitable for various applications such as environmental monitoring, urban planning, and disaster management."
+      ]
+    },
+    {
+      "tag": "data_sources",
+      "patterns": [
+        "what are the data sources for Bhuvan Data",
+        "Bhuvan Data sources",
+        "describe data sources in Bhuvan Data",
+        "origin of data in Bhuvan Data",
+        "where does Bhuvan Data come from"
+      ],
+      "responses": [
+        "The data in Bhuvan Data is sourced from both domestic and international satellites.",
+        "It includes geospatial datasets from various missions and satellites operated by different space agencies.",
+        "Bhuvan Data ensures access to high-quality and diverse geospatial information from multiple sources."
+      ]
+    },
+    {
+      "tag": "bhuvan_data_access",
+      "patterns": [
+        "how to access Bhuvan Data",
+        "Bhuvan Data access",
+        "accessing data on Bhuvan",
+        "getting data from Bhuvan Data",
+        "Bhuvan Data usage"
+      ],
+      "responses": [
+        "Users can access Bhuvan Data by visiting the NRSC's Bhuvan platform and navigating to the data section.",
+        "The platform provides easy access to a wide range of geospatial datasets and satellite imagery.",
+        "Accessing Bhuvan Data is designed to be user-friendly, supporting various applications and sectors."
+      ]
+    },
+    {
+      "tag": "about_bhuvan_karnataka_forest",
+      "patterns": [
+        "what is Bhuvan Karnataka Forest",
+        "explain Bhuvan Karnataka Forest",
+        "tell me about Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest information",
+        "details about Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "Bhuvan Karnataka Forest is a specialized application on the Bhuvan platform, providing comprehensive geospatial data and tools for forest management and conservation in India.",
+        "It enables users to explore and analyze geographical information about forests, aiding in informed decision-making and policy development for sustainable forest management.",
+        "The application offers various features and data layers specifically related to forests."
+      ]
+    },
+    {
+      "tag": "bhuvan_karnataka_forest_features",
+      "patterns": [
+        "what are the features of Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest capabilities",
+        "describe Bhuvan Karnataka Forest features",
+        "services offered by Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest functionalities"
+      ],
+      "responses": [
+        "Bhuvan Karnataka Forest offers features such as active layers, custom layers, drawing tools, measurement tools, WMS manager, print options, and navigation tools.",
+        "It provides access to thematic information including forest cover, tree species, and biodiversity.",
+        "Users can interact with satellite imagery, topographic maps, and administrative boundaries for forest management and conservation."
+      ]
+    },
+    {
+      "tag": "active_layers",
+      "patterns": [
+        "what are active layers in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest active layers",
+        "describe active layers in Bhuvan Karnataka Forest",
+        "using active layers in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest data layers"
+      ],
+      "responses": [
+        "Active Layers in Bhuvan Karnataka Forest allow users to view and interact with various geospatial data layers related to forests.",
+        "These layers include satellite imagery, topographic maps, and administrative boundaries.",
+        "Active Layers help in detailed analysis and visualization of forest areas."
+      ]
+    },
+    {
+      "tag": "my_layers",
+      "patterns": [
+        "what is My Layers in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest My Layers feature",
+        "describe My Layers in Bhuvan Karnataka Forest",
+        "using My Layers in Bhuvan Karnataka Forest",
+        "custom layers in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "My Layers in Bhuvan Karnataka Forest allows users to save and manage their preferred data layers for quick access and customization.",
+        "This feature facilitates efficient monitoring and analysis of specific forests or regions.",
+        "Users can personalize their data layers to tailor the application to their specific needs."
+      ]
+    },
+    {
+      "tag": "add_layer",
+      "patterns": [
+        "how to add layers in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest add layer feature",
+        "describe Add Layer in Bhuvan Karnataka Forest",
+        "adding new layers in Bhuvan Karnataka Forest",
+        "customizing layers in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "The Add Layer feature in Bhuvan Karnataka Forest enables users to add new data layers to the map.",
+        "This expands the range of data available for analysis, allowing users to tailor the application to their specific interests.",
+        "Adding new layers helps in comprehensive analysis of forest data."
+      ]
+    },
+    {
+      "tag": "draw_tool",
+      "patterns": [
+        "what is the Draw Tool in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest drawing tools",
+        "describe the Draw Tool in Bhuvan Karnataka Forest",
+        "using Draw Tool in Bhuvan Karnataka Forest",
+        "drawing shapes in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "The Draw Tool in Bhuvan Karnataka Forest provides tools for drawing shapes and lines on the map.",
+        "It is useful for marking specific locations or areas of interest, such as forest boundaries or protected areas.",
+        "Drawing tools aid in detailed visualization and analysis of geospatial data related to forests."
+      ]
+    },
+    {
+      "tag": "measurement_tools",
+      "patterns": [
+        "what are measurement tools in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest measurement features",
+        "describe measurement tools in Bhuvan Karnataka Forest",
+        "measuring distances in Bhuvan Karnataka Forest",
+        "using measure area in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "Bhuvan Karnataka Forest offers tools for measuring distances and areas on the map.",
+        "These tools aid in spatial analysis and planning, supporting the assessment of forest health and growth.",
+        "Measurement tools are essential for detailed geospatial analysis in forest management."
+      ]
+    },
+    {
+      "tag": "wms_manager",
+      "patterns": [
+        "what is WMS Manager in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest WMS Manager feature",
+        "describe WMS Manager in Bhuvan Karnataka Forest",
+        "using WMS Manager in Bhuvan Karnataka Forest",
+        "integrating external data in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "The WMS Manager in Bhuvan Karnataka Forest manages Web Map Service (WMS) layers.",
+        "It allows users to integrate external geospatial data sources into their analysis.",
+        "WMS Manager enhances the comprehensiveness and accuracy of the available information."
+      ]
+    },
+    {
+      "tag": "print_feature",
+      "patterns": [
+        "how to print maps in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest print feature",
+        "describe print options in Bhuvan Karnataka Forest",
+        "using print in Bhuvan Karnataka Forest",
+        "printing map view in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "The Print feature in Bhuvan Karnataka Forest offers options to print the current map view.",
+        "It is useful for documentation or presentation purposes.",
+        "Printing maps facilitates communication and collaboration among stakeholders."
+      ]
+    },
+    {
+      "tag": "navigation_tools",
+      "patterns": [
+        "what are navigation tools in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest navigation features",
+        "describe navigation tools in Bhuvan Karnataka Forest",
+        "using navigation tools in Bhuvan Karnataka Forest",
+        "navigating the map in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "Navigation tools in Bhuvan Karnataka Forest include zooming in and out, panning, and rotating the map view.",
+        "These tools ensure easy access to detailed information about specific forest areas.",
+        "Navigation tools help users explore and analyze geospatial data effectively."
+      ]
+    },
+    {
+      "tag": "thematic_information",
+      "patterns": [
+        "what thematic information is available in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest thematic data",
+        "describe thematic information in Bhuvan Karnataka Forest",
+        "using thematic information in Bhuvan Karnataka Forest",
+        "forest data in Bhuvan Karnataka Forest"
+      ],
+      "responses": [
+        "Bhuvan Karnataka Forest provides access to thematic information such as forest cover, tree species, and biodiversity.",
+        "This information enhances its utility for various sectors including environmental conservation, wildlife management, and climate change mitigation.",
+        "Thematic information supports informed decision-making and policy development in forest management."
+      ]
+    },
+    {
+      "tag": "bhuvan_karnataka_forest_disclaimer",
+      "patterns": [
+        "what is the disclaimer for Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest data disclaimer",
+        "describe Bhuvan Karnataka Forest disclaimer",
+        "data accuracy in Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest version information"
+      ],
+      "responses": [
+        "The disclaimer indicates that the data is in version 1.0 and improvements are ongoing.",
+        "NSRC/ISRO disclaims responsibility for any inadvertent errors beyond their limitations.",
+        "Users are advised to consider the disclaimer while using the data for analysis."
+      ]
+    },
+    {
+      "tag": "bhuvan_karnataka_forest_overall_purpose",
+      "patterns": [
+        "what is the purpose of Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest overall purpose",
+        "describe the goal of Bhuvan Karnataka Forest",
+        "Bhuvan Karnataka Forest mission",
+        "purpose of Bhuvan Karnataka Forest tool"
+      ],
+      "responses": [
+        "Bhuvan Karnataka Forest is part of the broader Bhuvan platform's efforts to make geospatial data and tools accessible for forest management.",
+        "It supports sustainable forest management and conservation initiatives in India, contributing to environmental conservation and resource management.",
+        "Bhuvan Karnataka Forest aims to provide comprehensive tools and data for informed decision-making in forest management."
+      ]
+    },
+    {
+      "tag": "bhuvan_panchayat_forest_access",
+      "patterns": [
+        "how to access the Bhuvan Panchayat Forest portal",
+        "link to Bhuvan Panchayat Forest",
+        "accessing forest data on Bhuvan Panchayat",
+        "Bhuvan Panchayat Forest portal link",
+        "where can I find the Bhuvan Panchayat Forest portal"
+      ],
+      "responses": [
+        "The Bhuvan Panchayat Forest portal can be accessed at https://bhuvan-app1.nrsc.gov.in/pb_forest/. It provides comprehensive geospatial data related to forest cover, management, and conservation in India.",
+        "Visit https://bhuvan-app1.nrsc.gov.in/pb_forest/ to access the Bhuvan Panchayat Forest portal, a web-based application developed by the National Remote Sensing Centre (NRSC) under ISRO.",
+        "You can access the Bhuvan Panchayat Forest portal through this link: https://bhuvan-app1.nrsc.gov.in/pb_forest/."
+      ]
+    },
+    {
+      "tag": "bhuvan_panchayat_forest_overview",
+      "patterns": [
+        "what is the Bhuvan Panchayat Forest portal",
+        "overview of Bhuvan Panchayat Forest",
+        "describe the Bhuvan Panchayat Forest portal",
+        "Bhuvan Panchayat Forest portal information",
+        "details about Bhuvan Panchayat Forest"
+      ],
+      "responses": [
+        "The Bhuvan Panchayat Forest portal is a web-based application developed by NRSC under ISRO, designed to provide comprehensive geospatial data related to forest cover, management, and conservation in India.",
+        "The Bhuvan Panchayat Forest portal supports panchayat-level planning by integrating advanced geospatial technologies and satellite imagery to deliver up-to-date information on forestry.",
+        "Accessible at https://bhuvan-app1.nrsc.gov.in/pb_forest/, the Bhuvan Panchayat Forest portal offers a detailed and interactive map-based interface for visualizing and analyzing forest-related data."
+      ]
+    },
+    {
+      "tag": "bhuvan_panchayat_forest_features",
+      "patterns": [
+        "features of Bhuvan Panchayat Forest",
+        "capabilities of Bhuvan Panchayat Forest",
+        "services offered by Bhuvan Panchayat Forest",
+        "what can I do with Bhuvan Panchayat Forest",
+        "Bhuvan Panchayat Forest functionalities"
+      ],
+      "responses": [
+        "The Bhuvan Panchayat Forest portal offers features such as high-resolution satellite imagery visualization, various data layers like forest density and land use, and tools for measuring and annotating maps.",
+        "Key features of the Bhuvan Panchayat Forest portal include geospatial data visualization, forest management and monitoring tools, disaster management support, and biodiversity and wildlife conservation data.",
+        "Bhuvan Panchayat Forest provides tools for local governance, enabling resource management, environmental planning, community engagement, and regulatory compliance with accurate forest data."
+      ]
+    },
+    {
+      "tag": "bhuvan_panchayat_forest_local_governance",
+      "patterns": [
+        "how does Bhuvan Panchayat Forest help local governance",
+        "applications of Bhuvan Panchayat Forest in local governance",
+        "Bhuvan Panchayat Forest for panchayats",
+        "local governance benefits from Bhuvan Panchayat Forest",
+        "using Bhuvan Panchayat Forest in panchayat planning"
+      ],
+      "responses": [
+        "The Bhuvan Panchayat Forest portal aids local governance by providing easy access to comprehensive forest data, empowering panchayats to make informed decisions on land use, conservation, and development projects.",
+        "Panchayats can use the Bhuvan Panchayat Forest portal for effective resource management, environmental planning, and community engagement, ensuring sustainable development and compliance with environmental regulations.",
+        "By offering detailed forest maps and data, the Bhuvan Panchayat Forest portal supports panchayats in planning infrastructure projects with minimal environmental disruption and promoting conservation efforts."
+      ]
+    },
+    {
+      "tag": "bhuvan_panchayat_forest_disaster_management",
+      "patterns": [
+        "Bhuvan Panchayat Forest for disaster management",
+        "how does Bhuvan Panchayat Forest help in disaster management",
+        "disaster management features in Bhuvan Panchayat Forest",
+        "forest fire monitoring on Bhuvan Panchayat Forest",
+        "using Bhuvan Panchayat Forest for natural disasters"
+      ],
+      "responses": [
+        "The Bhuvan Panchayat Forest portal supports disaster management by providing tools for early warning and real-time monitoring of forest fires and other natural disasters.",
+        "Data on the Bhuvan Panchayat Forest portal helps in assessing fire-prone areas and deploying timely mitigation measures, enhancing disaster preparedness and response.",
+        "The portal's features for monitoring forest health and changes over time are crucial for managing natural disasters and planning conservation efforts effectively."
+      ]
+    },
+    {
+      "tag": "bhuvan_telangana_forest_access",
+      "patterns": [
+        "how to access the Bhuvan Telangana Forest portal",
+        "link to Bhuvan Telangana Forest",
+        "accessing forest data on Bhuvan Telangana",
+        "Bhuvan Telangana Forest portal link",
+        "where can I find the Bhuvan Telangana Forest portal"
+      ],
+      "responses": [
+        "The Bhuvan Telangana Forest portal can be accessed at https://bhuvan-app1.nrsc.gov.in/ts_forest/. It provides comprehensive geospatial data related to the forests of Telangana.",
+        "Visit https://bhuvan-app1.nrsc.gov.in/ts_forest/ to access the Bhuvan Telangana Forest portal, a web-based application developed by the National Remote Sensing Centre (NRSC) under ISRO.",
+        "You can access the Bhuvan Telangana Forest portal through this link: https://bhuvan-app1.nrsc.gov.in/ts_forest/."
+      ]
+    },
+    {
+      "tag": "bhuvan_telangana_forest_overview",
+      "patterns": [
+        "what is the Bhuvan Telangana Forest portal",
+        "overview of Bhuvan Telangana Forest",
+        "describe the Bhuvan Telangana Forest portal",
+        "Bhuvan Telangana Forest portal information",
+        "details about Bhuvan Telangana Forest"
+      ],
+      "responses": [
+        "The Bhuvan Telangana Forest portal is a web-based application developed by NRSC under ISRO, designed to provide comprehensive geospatial data related to the forests of Telangana.",
+        "The Bhuvan Telangana Forest portal supports the Telangana Forest Department by providing detailed, up-to-date information on forest cover, health, and management practices.",
+        "Accessible at https://bhuvan-app1.nrsc.gov.in/ts_forest/, the Bhuvan Telangana Forest portal offers a user-friendly interface for visualizing and analyzing forest-related data."
+      ]
+    },
+    {
+      "tag": "bhuvan_telangana_forest_features",
+      "patterns": [
+        "features of Bhuvan Telangana Forest",
+        "capabilities of Bhuvan Telangana Forest",
+        "services offered by Bhuvan Telangana Forest",
+        "what can I do with Bhuvan Telangana Forest",
+        "Bhuvan Telangana Forest functionalities"
+      ],
+      "responses": [
+        "The Bhuvan Telangana Forest portal offers features such as an interactive map interface, high-resolution satellite imagery, various data layers, and analytical tools for spatial analysis.",
+        "Key features of the Bhuvan Telangana Forest portal include forest health monitoring, data layers for forest density and biodiversity, and tools for measuring and planning.",
+        "Bhuvan Telangana Forest provides essential tools for forest management, conservation, and disaster management, supporting the sustainable use of forest resources."
+      ]
+    },
+    {
+      "tag": "bhuvan_telangana_forest_local_governance",
+      "patterns": [
+        "how does Bhuvan Telangana Forest help local governance",
+        "applications of Bhuvan Telangana Forest in forest management",
+        "Bhuvan Telangana Forest for Telangana Forest Department",
+        "local governance benefits from Bhuvan Telangana Forest",
+        "using Bhuvan Telangana Forest in forest planning"
+      ],
+      "responses": [
+        "The Bhuvan Telangana Forest portal aids the Telangana Forest Department by providing detailed geospatial data for resource planning, conservation efforts, and policy formulation.",
+        "The portal supports local governance by offering data for sustainable forest management, disaster response, and community involvement in conservation efforts.",
+        "By providing accurate forest data, the Bhuvan Telangana Forest portal helps in planning and implementing effective forest management strategies and policies."
+      ]
+    },
+    {
+      "tag": "bhuvan_telangana_forest_disaster_management",
+      "patterns": [
+        "Bhuvan Telangana Forest for disaster management",
+        "how does Bhuvan Telangana Forest help in disaster management",
+        "disaster management features in Bhuvan Telangana Forest",
+        "forest fire monitoring on Bhuvan Telangana Forest",
+        "using Bhuvan Telangana Forest for natural disasters"
+      ],
+      "responses": [
+        "The Bhuvan Telangana Forest portal supports disaster management by providing tools for monitoring forest fires and other natural disasters, enabling timely intervention.",
+        "Data on the Bhuvan Telangana Forest portal helps in assessing fire-prone areas and deploying mitigation measures to reduce the impact of disasters on forest ecosystems.",
+        "The portal's capabilities in monitoring forest health and changes over time are crucial for effective disaster management and conservation efforts."
+      ]
+    },
+    {
+      "tag": "bhuvan_ganga_access",
+      "patterns": [
+        "how to access the Bhuvan Ganga portal",
+        "link to Bhuvan Ganga",
+        "accessing data on Bhuvan Ganga",
+        "Bhuvan Ganga portal link",
+        "where can I find the Bhuvan Ganga portal"
+      ],
+      "responses": [
+        "The Bhuvan Ganga portal can be accessed at https://bhuvan-app1.nrsc.gov.in/mowr_ganga/. It provides comprehensive geospatial data related to the Ganga river basin.",
+        "Visit https://bhuvan-app1.nrsc.gov.in/mowr_ganga/ to access the Bhuvan Ganga portal, a web-based application developed by the National Remote Sensing Centre (NRSC) under ISRO.",
+        "You can access the Bhuvan Ganga portal through this link: https://bhuvan-app1.nrsc.gov.in/mowr_ganga/."
+      ]
+    },
+    {
+      "tag": "bhuvan_ganga_overview",
+      "patterns": [
+        "what is the Bhuvan Ganga portal",
+        "overview of Bhuvan Ganga",
+        "describe the Bhuvan Ganga portal",
+        "Bhuvan Ganga portal information",
+        "details about Bhuvan Ganga"
+      ],
+      "responses": [
+        "The Bhuvan Ganga portal is a web-based application developed by NRSC under ISRO, designed to support the National Mission for Clean Ganga (NMCG) by providing comprehensive geospatial data related to the Ganga river basin.",
+        "The Bhuvan Ganga portal serves as an integrated platform for visualizing, analyzing, and disseminating geospatial information pertinent to the Ganga river and its tributaries.",
+        "Accessible at https://bhuvan-app1.nrsc.gov.in/mowr_ganga/, the Bhuvan Ganga portal offers stakeholders access to critical data for informed decision-making and effective river basin management."
+      ]
+    },
+    {
+      "tag": "bhuvan_ganga_features",
+      "patterns": [
+        "features of Bhuvan Ganga",
+        "capabilities of Bhuvan Ganga",
+        "services offered by Bhuvan Ganga",
+        "what can I do with Bhuvan Ganga",
+        "Bhuvan Ganga functionalities"
+      ],
+      "responses": [
+        "The Bhuvan Ganga portal offers features such as an interactive map interface, real-time water quality monitoring, detailed land use/land cover analysis, and tools for flood and drought monitoring.",
+        "Key features of the Bhuvan Ganga portal include geospatial data visualization, water quality monitoring, land use analysis, and support for comprehensive river basin management.",
+        "Bhuvan Ganga provides essential tools for river rejuvenation, public participation, and policy planning, supporting sustainable management of the Ganga river basin."
+      ]
+    },
+    {
+      "tag": "bhuvan_ganga_local_governance",
+      "patterns": [
+        "how does Bhuvan Ganga help local governance",
+        "applications of Bhuvan Ganga in river management",
+        "Bhuvan Ganga for river rejuvenation",
+        "local governance benefits from Bhuvan Ganga",
+        "using Bhuvan Ganga in river planning"
+      ],
+      "responses": [
+        "The Bhuvan Ganga portal aids local governance by providing detailed geospatial data for policy formulation, sustainable planning, and effective management of the Ganga river basin.",
+        "The portal supports various stakeholders, including government agencies and researchers, by offering data for river basin management, disaster response, and community engagement in conservation efforts.",
+        "By providing accurate geospatial data, the Bhuvan Ganga portal helps in developing targeted interventions for pollution control, habitat restoration, and sustainable river management."
+      ]
+    },
+    {
+      "tag": "bhuvan_ganga_disaster_management",
+      "patterns": [
+        "Bhuvan Ganga for disaster management",
+        "how does Bhuvan Ganga help in disaster management",
+        "disaster management features in Bhuvan Ganga",
+        "flood monitoring on Bhuvan Ganga",
+        "using Bhuvan Ganga for natural disasters"
+      ],
+      "responses": [
+        "The Bhuvan Ganga portal supports disaster management by providing tools for monitoring floods and droughts, enabling timely intervention and mitigation measures.",
+        "Data on the Bhuvan Ganga portal helps in tracking water levels, predicting flood events, and assessing drought conditions, facilitating effective disaster management.",
+        "The portal's capabilities in monitoring hydrological extremes are crucial for timely response and reducing the impact of natural disasters on the Ganga river ecosystem."
+      ]
+    },
+    {
+      "tag": "heatwave_data_access",
+      "patterns": [
+        "how to access heatwave data on Bhuvan",
+        "download heatwave information from Bhuvan",
+        "what kind of data is available on Bhuvan Heatwave Portal",
+        "accessing heatwave data on Bhuvan",
+        "Bhuvan heatwave data download"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal provides access to a variety of geospatial data related to heatwaves, including real-time temperature data and historical trends.",
+        "You can access maximum daily temperatures, temperature anomalies, and heatwave frequency data on the Bhuvan Heatwave Portal.",
+        "The Bhuvan Heatwave Portal allows users to download data on heatwave conditions and impacts for various applications."
+      ]
+    },
+    {
+      "tag": "heatwave_features",
+      "patterns": [
+        "what are the features of Bhuvan Heatwave Portal",
+        "tell me about the capabilities of Bhuvan Heatwave Portal",
+        "describe the services offered by Bhuvan Heatwave Portal",
+        "Bhuvan Heatwave Portal features",
+        "Bhuvan Heatwave Portal services"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal offers a dynamic interactive map interface, real-time temperature data, and historical trend analysis tools.",
+        "The portal provides impact assessment tools for agriculture, health, and infrastructure, as well as alerts and notifications for imminent heatwave conditions.",
+        "Bhuvan Heatwave Portal supports users with comprehensive data on heatwaves to facilitate informed decision-making and timely intervention."
+      ]
+    },
+    {
+      "tag": "heatwave_map_interface",
+      "patterns": [
+        "how to use the interactive map on Bhuvan Heatwave Portal",
+        "visualizing data on Bhuvan Heatwave Portal map",
+        "map functions on Bhuvan Heatwave Portal",
+        "using the map interface of Bhuvan Heatwave Portal"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal's interactive map allows users to visualize data layers related to heatwaves, including temperature anomalies and affected regions.",
+        "You can zoom, pan, and overlay multiple data sets on the Bhuvan Heatwave Portal map for a comprehensive view of the heatwave situation.",
+        "The map interface supports real-time data visualization, helping users monitor current heatwave conditions and trends."
+      ]
+    },
+    {
+      "tag": "real_time_data",
+      "patterns": [
+        "real-time temperature data on Bhuvan Heatwave Portal",
+        "current heatwave conditions on Bhuvan",
+        "how to monitor real-time heatwave data on Bhuvan",
+        "accessing real-time data on Bhuvan Heatwave Portal"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal provides real-time temperature data, including maximum daily temperatures and temperature anomalies.",
+        "Users can monitor current heatwave conditions and track temperature trends in real-time on the Bhuvan Heatwave Portal.",
+        "Access real-time data on heatwaves to stay informed about ongoing extreme heat events using the Bhuvan Heatwave Portal."
+      ]
+    },
+    {
+      "tag": "historical_data",
+      "patterns": [
+        "historical heatwave data on Bhuvan Heatwave Portal",
+        "analyzing past heatwaves on Bhuvan",
+        "accessing historical trends on Bhuvan Heatwave Portal",
+        "how to view historical heatwave data on Bhuvan"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal offers access to historical data on heatwaves, enabling users to analyze trends and patterns over time.",
+        "Use the historical data on the Bhuvan Heatwave Portal to understand the frequency, intensity, and duration of past heatwaves.",
+        "The portal's trend analysis tools help identify vulnerable regions and predict future heatwave scenarios based on historical data."
+      ]
+    },
+    {
+      "tag": "impact_assessment",
+      "patterns": [
+        "impact of heatwaves on agriculture using Bhuvan",
+        "heatwave impact on health from Bhuvan Heatwave Portal",
+        "how to assess heatwave impacts on Bhuvan",
+        "tools for impact assessment on Bhuvan Heatwave Portal"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal includes tools for assessing the impacts of heatwaves on agriculture, health, and infrastructure.",
+        "By integrating data on crop patterns, population density, and infrastructure, the portal provides insights into the potential effects of heatwaves on various sectors.",
+        "Use the impact assessment tools on the Bhuvan Heatwave Portal to plan and implement effective mitigation and adaptation strategies."
+      ]
+    },
+    {
+      "tag": "alerts_notifications",
+      "patterns": [
+        "heatwave alerts on Bhuvan Heatwave Portal",
+        "subscribing to heatwave notifications on Bhuvan",
+        "how to receive heatwave alerts from Bhuvan",
+        "setting up heatwave notifications on Bhuvan Heatwave Portal"
+      ],
+      "responses": [
+        "The Bhuvan Heatwave Portal offers alert and notification services for imminent heatwave conditions.",
+        "Users can subscribe to receive alerts about heatwaves based on predefined temperature thresholds.",
+        "Set up notifications on the Bhuvan Heatwave Portal to stay informed and prepare for heatwave events in your region."
+      ]
+    },
+    {
+      "tag": "pmksy_data_access",
+      "patterns": [
+        "how to access data on Bhuvan PMKSY portal",
+        "download irrigation data from Bhuvan",
+        "what kind of data is available on Bhuvan PMKSY portal",
+        "accessing irrigation data on Bhuvan",
+        "Bhuvan PMKSY data download"
+      ],
+      "responses": [
+        "The Bhuvan PMKSY portal provides access to a variety of geospatial data related to irrigation, including satellite imagery, rainfall data, and soil moisture levels.",
+        "You can access information on irrigation infrastructure, water resources, and agricultural productivity on the Bhuvan PMKSY portal.",
+        "The Bhuvan PMKSY portal allows users to download data on irrigation projects and agricultural practices for various applications."
+      ]
+    },
+    {
+      "tag": "pmksy_features",
+      "patterns": [
+        "what are the features of Bhuvan PMKSY portal",
+        "tell me about the capabilities of Bhuvan PMKSY portal",
+        "describe the services offered by Bhuvan PMKSY portal",
+        "Bhuvan PMKSY portal features",
+        "Bhuvan PMKSY portal services"
+      ],
+      "responses": [
+        "The Bhuvan PMKSY portal offers a user-friendly interactive map interface, high-resolution satellite imagery, and comprehensive agricultural data and analytics.",
+        "The portal provides tools for water resource management, real-time monitoring of irrigation projects, and decision support for stakeholders.",
+        "Bhuvan PMKSY portal supports users with actionable insights derived from geospatial data to enhance irrigation efficiency and agricultural productivity."
+      ]
+    },
+    {
+      "tag": "pmksy_map_interface",
+      "patterns": [
+        "how to use the interactive map on Bhuvan PMKSY portal",
+        "visualizing irrigation data on Bhuvan PMKSY portal",
+        "understanding maps on Bhuvan PMKSY portal",
+        "Bhuvan PMKSY portal map interface"
+      ],
+      "responses": [
+        "The Bhuvan PMKSY portal's interactive map interface allows users to visualize and analyze irrigation infrastructure, water resources, and agricultural land.",
+        "Users can overlay multiple data layers, zoom in/out, and pan across the map interface to gain insights into irrigation projects and agricultural practices.",
+        "The map interface on Bhuvan PMKSY portal facilitates spatial analysis and decision-making for irrigation management and agricultural planning."
+      ]
+    },
+    {
+      "tag": "pmksy_applications",
+      "patterns": [
+        "what are the applications of Bhuvan PMKSY portal",
+        "uses of Bhuvan PMKSY portal",
+        "how is Bhuvan PMKSY portal used",
+        "Bhuvan PMKSY portal applications"
+      ],
+      "responses": [
+        "The Bhuvan PMKSY portal is used for project planning, monitoring irrigation efficiency, drought management, and policy development in irrigation and agriculture.",
+        "Stakeholders utilize the portal for implementing efficient irrigation systems, reducing water wastage, mitigating the impact of droughts, and formulating evidence-based policies.",
+        "Bhuvan PMKSY portal contributes to improving agricultural productivity, ensuring sustainable water use, and supporting the livelihoods of farmers across India."
+      ]
+    },
+    {
+      "tag": "imd_data_access",
+      "patterns": [
+        "how to access data on Bhuvan IMD portal",
+        "download meteorological data from Bhuvan IMD",
+        "what kind of data is available on Bhuvan IMD portal",
+        "accessing weather data on Bhuvan IMD",
+        "Bhuvan IMD data download"
+      ],
+      "responses": [
+        "The Bhuvan IMD portal provides access to a wide range of meteorological data, including temperature, humidity, precipitation, wind speed, and atmospheric pressure.",
+        "Users can access real-time weather observations, short-term and long-term weather forecasts, and historical weather data on the Bhuvan IMD portal.",
+        "Bhuvan IMD portal offers reliable weather information to support weather forecasting, monitoring, and analysis across India."
+      ]
+    },
+    {
+      "tag": "imd_features",
+      "patterns": [
+        "what are the features of Bhuvan IMD portal",
+        "tell me about the capabilities of Bhuvan IMD portal",
+        "describe the services offered by Bhuvan IMD portal",
+        "Bhuvan IMD portal features",
+        "Bhuvan IMD portal services"
+      ],
+      "responses": [
+        "The Bhuvan IMD portal offers weather data and forecasts, satellite imagery, weather monitoring and analysis tools, severe weather alerts, historical weather data, and customizable dashboards.",
+        "Users can visualize meteorological data on interactive maps, analyze trends over time, receive timely alerts for severe weather events, and customize their dashboards according to their preferences.",
+        "Bhuvan IMD portal serves meteorologists, researchers, policymakers, and the general public with accurate and timely weather information for informed decision-making."
+      ]
+    },
+    {
+      "tag": "imd_applications",
+      "patterns": [
+        "what are the applications of Bhuvan IMD portal",
+        "uses of Bhuvan IMD portal",
+        "how is Bhuvan IMD portal used",
+        "Bhuvan IMD portal applications"
+      ],
+      "responses": [
+        "The Bhuvan IMD portal has applications in weather forecasting, agriculture, aviation and transportation, disaster management, research, and education.",
+        "Users utilize the portal for disaster preparedness and response, agricultural planning, optimizing flight routes, conducting meteorological research, and enhancing public understanding of weather and climate science.",
+        "Bhuvan IMD portal contributes to improving resilience to climate-related risks, supporting sustainable development, and safeguarding the well-being of communities across India."
+      ]
+    },
+    {
+      "tag": "about_bhuvan_tourism",
+      "patterns": [
+        "what is Bhuvan Tourism",
+        "explain Bhuvan Tourism",
+        "tell me about Bhuvan Tourism",
+        "Bhuvan Tourism information",
+        "details about Bhuvan Tourism"
+      ],
+      "responses": [
+        "Bhuvan Tourism is a specialized application designed to support tourism development and promotion in India through geospatial technology.",
+        "It provides comprehensive data and tools for tourism planning, site selection, and visitor management.",
+        "The platform offers access to satellite imagery, topographic maps, and cultural heritage data to identify potential tourist sites and plan for sustainable tourism."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_features",
+      "patterns": [
+        "what are the features of Bhuvan Tourism",
+        "Bhuvan Tourism capabilities",
+        "describe Bhuvan Tourism features",
+        "services offered by Bhuvan Tourism",
+        "Bhuvan Tourism functionalities"
+      ],
+      "responses": [
+        "Bhuvan Tourism leverages GIS technology to enhance tourism planning and promotion, providing tools for site selection and visitor management.",
+        "Users can access geospatial data, including satellite imagery and topographic maps, to assess the impact of tourism and plan sustainable development.",
+        "The platform supports the integration of geospatial technology into tourism management, benefiting local economies and preserving cultural heritage."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_usage",
+      "patterns": [
+        "how to use Bhuvan Tourism",
+        "Bhuvan Tourism usage guide",
+        "using Bhuvan Tourism for tourism planning",
+        "steps to use Bhuvan Tourism",
+        "Bhuvan Tourism user guide"
+      ],
+      "responses": [
+        "Bhuvan Tourism can be used by accessing its web portal. Users can explore and analyze geospatial data for tourism planning and management.",
+        "The platform offers tools for identifying potential tourist sites and assessing the impact of tourism on local communities.",
+        "Government agencies, tour operators, and local communities can use Bhuvan Tourism to make informed decisions for sustainable tourism development."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_benefits",
+      "patterns": [
+        "what are the benefits of Bhuvan Tourism",
+        "advantages of using Bhuvan Tourism",
+        "Bhuvan Tourism benefits",
+        "how Bhuvan Tourism helps tourism",
+        "benefits of geospatial technology in tourism"
+      ],
+      "responses": [
+        "Bhuvan Tourism enhances the efficiency and effectiveness of tourism planning and promotion through geospatial technology.",
+        "It helps in identifying potential tourist sites, assessing tourism impact, and planning sustainable development.",
+        "The platform supports informed decision-making by stakeholders, benefiting local economies and preserving cultural and natural heritage."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_data",
+      "patterns": [
+        "what data is available on Bhuvan Tourism",
+        "Bhuvan Tourism data information",
+        "types of data on Bhuvan Tourism",
+        "data provided by Bhuvan Tourism",
+        "Bhuvan Tourism geospatial data"
+      ],
+      "responses": [
+        "Bhuvan Tourism provides access to satellite imagery, topographic maps, and cultural heritage data.",
+        "The platform offers comprehensive geospatial data for tourism planning, including tools for site selection and visitor management.",
+        "Users can integrate this data into their tourism development plans to ensure sustainable and effective tourism management."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_stakeholders",
+      "patterns": [
+        "who can use Bhuvan Tourism",
+        "Bhuvan Tourism stakeholders",
+        "users of Bhuvan Tourism",
+        "target audience for Bhuvan Tourism",
+        "Bhuvan Tourism beneficiaries"
+      ],
+      "responses": [
+        "Bhuvan Tourism is designed for use by government agencies, tour operators, and local communities involved in tourism development.",
+        "Stakeholders can use the platform to make informed decisions that promote tourism, benefit local economies, and preserve cultural heritage.",
+        "The application facilitates collaboration among various stakeholders to achieve sustainable tourism development."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_integration",
+      "patterns": [
+        "how does Bhuvan Tourism integrate with GIS",
+        "GIS integration in Bhuvan Tourism",
+        "Bhuvan Tourism and GIS technology",
+        "integration of geospatial technology in Bhuvan Tourism",
+        "using GIS with Bhuvan Tourism"
+      ],
+      "responses": [
+        "Bhuvan Tourism integrates GIS technology to enhance tourism planning and management.",
+        "The platform provides geospatial tools and data that support informed decision-making for tourism development.",
+        "This integration helps stakeholders identify potential tourist sites, assess tourism impacts, and plan for sustainable development."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_sustainability",
+      "patterns": [
+        "how does Bhuvan Tourism support sustainability",
+        "sustainable tourism with Bhuvan Tourism",
+        "Bhuvan Tourism and sustainable development",
+        "promoting sustainability with Bhuvan Tourism",
+        "Bhuvan Tourism's role in sustainability"
+      ],
+      "responses": [
+        "Bhuvan Tourism supports sustainable tourism development by providing tools and data for informed decision-making.",
+        "The platform helps identify potential tourist sites and assess the impact of tourism on local communities and environments.",
+        "By promoting sustainable tourism practices, Bhuvan Tourism benefits local economies and preserves cultural and natural heritage."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_planning",
+      "patterns": [
+        "how does Bhuvan Tourism help in tourism planning",
+        "tourism planning with Bhuvan Tourism",
+        "Bhuvan Tourism for site selection",
+        "using Bhuvan Tourism for tourism management",
+        "tourism development with Bhuvan Tourism"
+      ],
+      "responses": [
+        "Bhuvan Tourism aids in tourism planning by providing geospatial data and tools for site selection and visitor management.",
+        "The platform allows stakeholders to explore potential tourist sites and plan for sustainable tourism development.",
+        "Through comprehensive geospatial analysis, Bhuvan Tourism supports efficient and effective tourism management."
+      ]
+    },
+    {
+      "tag": "bhuvan_tourism_access",
+      "patterns": [
+        "how to access Bhuvan Tourism",
+        "Bhuvan Tourism access details",
+        "getting started with Bhuvan Tourism",
+        "accessing geospatial data on Bhuvan Tourism",
+        "Bhuvan Tourism platform access"
+      ],
+      "responses": [
+        "You can access Bhuvan Tourism via its web portal at https://bhuvan-app1.nrsc.gov.in/tourism/tourism.php.",
+        "The platform offers a user-friendly interface for exploring and analyzing geospatial data for tourism planning.",
+        "Stakeholders can use the application to make informed decisions for sustainable tourism development and promotion."
+      ]
+    }
+  ]
+}

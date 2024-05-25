@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhuvan Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" text="text/css" media="screen" href="{% static 'css/index.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wavesurfer.js"></script>
+  {% csrf_token %}
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img style="width: 450px;" src="{% static 'assest/bhuvan-logo.png' %}" alt="Left Image">
+      <h1 class="centered-h1 f2 mb4">Bhuvan Assistant</h1>
+      <img style="width: 500px;" src="{% static 'assest/nrsc_logo.png' %}" alt="Right Image">
+    </div>
+    {% if request.user.is_authenticated %}
+    <p> Welcome {{ request.user }} </p>
+    <a style="text-decoration: none;" href="{% url 'logout' %}" class="dropdown-link"><svg version="1.1"
+        xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <title>sign-out</title>
+        <path
+          d="M3 0h22c0.553 0 1 0.553 1 0.553l-0 3.447h-2v-2h-20v28h20v-2h2l0 3.447c0 0.553-0.447 0.553-1 0.553h-22c-0.553 0-1-0.447-1-1v-30c0-0.553 0.447-1 1-1z">
+        </path>
+        <path
+          d="M21.879 21.293l1.414 1.414 6.707-6.707-6.707-6.707-1.414 1.414 4.293 4.293h-14.172v2h14.172l-4.293 4.293z">
+        </path>
+      </svg>
+      Logout</a>
+    {% else %}
+
+    <a style="text-decoration: none;" href="{% url 'login' %}">
+      <p>Login</p>
+    </a>
+    {% endif %}
+    <div class="button-group">
+      <button id="recordBtn" class="record-btn b pa3 br3 bg-dark-gray near-white hover-bg-mid-gray">
+        <i class="fas fa-microphone"></i> Record
+      </button>
+      <button id="stopRecordBtn" style="display: none;"
+        class="stop-btn b pa3 br3 bg-dark-gray near-white hover-bg-mid-gray">
+        <i class="fas fa-stop-circle"></i> Stop Recording
+      </button>
+      <button id="clearBtn" class="clear-btn b pa3 br3 bg-dark-gray near-white hover-bg-mid-gray">
+        <i class="fas fa-trash-alt"></i> Clear
+      </button>
+    </div>
+
+    <div id="chatBox" class="chat-box mt4 pa3 br3 bg-light-gray near-black">
+      <!-- Chat messages will appear here -->
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="textInput" class="text-input" placeholder="Type your message here...">
+      <button id="sendBtn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <div class="audio-visualizer-container">
+    <canvas id="audioVisualizer"></canvas>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      const csrf_token = $("input[name='csrfmiddlewaretoken']").val();
+
+      const recognition = new webkitSpeechRecognition();
+      recognition.continuous = true;
+
+      const wavesurfer = WaveSurfer.create({
+        container: document.getElementById("audioVisualizer"),
+      });
+
+      // webkit transcriber
+      $("#recordBtn").click(function () {
+        recognition.start();
+        wavesurfer.loadBlob(/* ... */);
+        wavesurfer.play();
+        $("#recordBtn").hide();
+        $("#stopRecordBtn").show();
+      });
+
+      // stop recording
+      $("#stopRecordBtn").click(function () {
+        recognition.stop();
+        $("#stopRecordBtn").hide();
+        $("#recordBtn").show();
+        wavesurfer.stop();
+      });
+
+      // clear all text
+      $("#clearBtn").click(function () {
+        $("#chatBox").html("");
+        wavesurfer.empty();
+      });
+
+      recognition.onaudiostart = function (event) {
+        wavesurfer.play();
+      };
+
+      recognition.onaudioend = function (event) {
+        wavesurfer.stop();
+      };
+
+      // show the transcribed text to the screen from webkit
+      recognition.onresult = function (event) {
+        var transcription = event.results[event.results.length - 1][0].transcript;
+        appendUserMessage(transcription);
+        sendTranscription(transcription);
+      };
+
+      // handle text input submission
+      $("#sendBtn").click(function () {
+        var transcription = $("#textInput").val();
+        if (transcription.trim() !== "") {
+          appendUserMessage(transcription);
+          sendTranscription(transcription);
+          $("#textInput").val(""); // Clear input field
+        }
+      });
+
+      $("#textInput").keypress(function (e) {
+        if (e.which == 13) { // Enter key pressed
+          $("#sendBtn").click();
+        }
+      });
+
+      function appendUserMessage(message) {
+        $("#chatBox").append('<div class="message user-message"><div class="message-label">User</div><div class="message-text">' + message + '</div></div>');
+      }
+
+      function sendTranscription(transcription) {
+        $.ajax({
+          type: "POST",
+          url: "/process_transcription/",
+          data: { transcription: transcription, csrfmiddlewaretoken: csrf_token },
+          success: function (response) {
+            if (response.status === 'success') {
+              $("#chatBox").append('<div class="message bot-message"><div class="message-label">Assistant</div><div class="message-text">' + response.response + '</div></div>');
+              speak(response.response); // Add this line to speak the assistant's response
+            } else {
+              console.error(response.message);
+            }
+          },
+          error: function (error) {
+            console.error(error);
+          },
+        });
+      }
+
+      function speak(text) {
+        if ('speechSynthesis' in window) {
+          speechSynthesis.cancel(); // Clear any existing speech
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'en-US'; // Set language to English (US)
+          utterance.onend = function (event) {
+            console.log("SpeechSynthesisUtterance.onend");
+          }
+          utterance.onerror = function (event) {
+            console.error("SpeechSynthesisUtterance.onerror", event.error);
+          }
+          speechSynthesis.speak(utterance);
+        } else {
+          console.error("Speech synthesis not supported in this browser.");
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
