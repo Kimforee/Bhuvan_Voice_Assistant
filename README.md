@@ -31,14 +31,17 @@ This project involves designing and implementing a chatbot equipped with voice r
    cd your-repo-name
 
 2. **Install dependencies:**
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
-3. **Run migrations:**
-python manage.py makemigrations
-python manage.py migrate
+4. **Run migrations:**
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
 
-4. **Start the server:**
-python manage.py runserver
+6. **Start the server:**
+   ```bash
+   python manage.py runserver
 
 Usage
 Register or log in to access the voice-activated chatbot.
@@ -50,7 +53,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
 
 ### Summary
 This guide helps you set up your GitHub repository for your project and provides a detailed structure for your `README.md` file. Customize the sections as needed to fit your specific project details and instructions.
