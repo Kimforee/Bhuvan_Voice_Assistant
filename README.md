@@ -1,6 +1,7 @@
 # Project Title
 
 Voice-Activated Search Assistant: Revolutionizing Query Resolution through Conversational AI
+![image](https://github.com/user-attachments/assets/60502881-56f0-4ef4-9d34-30968d834d57)
 
 ## Description
 
